@@ -2,7 +2,7 @@ from sims4communitylib.mod_support.common_mod_info import CommonModInfo
 
 
 class ModInfo(CommonModInfo):
-    """ Mod info for the S4CL Sample Mod. """
+    """ Mod info for the S4.CL Sample Mod. """
     # To create a Mod Identity for this mod, simply do ModInfo.get_identity(). Please refrain from using the ModInfo of The Sims 4 Community Library in your own mod and instead use yours!
     _FILE_PATH: str = str(__file__)
 
@@ -28,11 +28,13 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '1.0.0'
+        return '1.0.1'
 
 
 '''
+v1.0.1
+    Removed dependency to FixKeyError5
 v1.0.0
    Initial version for the Horse DLC.
-   Honestly FixKeyError5 would catch also this error still work if it was still installed. 
+   Honestly FixKeyError5 would also catch this error if it was still installed. 
 '''

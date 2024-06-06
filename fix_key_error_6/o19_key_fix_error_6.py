@@ -4,7 +4,7 @@
 #
 
 
-from fix_key_error_5.modinfo import ModInfo
+from fix_key_error_6.modinfo import ModInfo
 from sims.aging.aging_tuning import AgingTuning
 from sims.sim_info_types import Species
 from sims4communitylib.events.event_handling.common_event_registry import CommonEventRegistry
@@ -14,7 +14,7 @@ from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegi
 
 from sims.aging.aging_mixin import AgingMixin
 
-log: CommonLog = CommonLogRegistry.get().register_log(f"{ModInfo.get_identity().author}_{ModInfo.get_identity().name}", ModInfo.get_identity().name)
+log: CommonLog = CommonLogRegistry.get().register_log(ModInfo.get_identity(), ModInfo.get_identity().name)
 log.enable()
 log.warn("This mod injects into AgingMixin.get_aging_data() and tries to catch tuning errors.")
 log.warn("It has been build for TS4 versions higher than v1.98.158 / released after July 17 2023.")
